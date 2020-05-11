@@ -1,0 +1,105 @@
+main {
+  height: 600px;
+}
+
+.imposto-box {
+    height: 75%;
+    width: 80%;
+    align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  /* background-color: red; */
+  height: 100%;
+}
+
+.content h2,p {
+  color: rgb(26, 26, 26);
+}
+
+#logo-empresa {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #4e73df;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  height: 4.375rem;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  z-index: 1;
+  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.nome-empresa {
+  text-align: center;
+}
+
+.navbar{
+  padding-left: unset;
+}
+
+.title-imposto {
+  margin-top: 20px;
+}
+
+.border-left-light-blue {
+  border-left: .25rem solid #819ceb;
+}
+
+.alert {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.custom-control, .button ,.texto-imposto {
+  margin: 15px 0 15px 0;  
+}
+
+/**/
+
+
+table {
+  border: 1px solid #4667c8;
+  color: #4e73df;
+  width: 80%;
+  border-collapse:unset;
+  background-color: #4e73df;/* #4e73df*/
+  border-radius: .35rem;
+  margin-top: 5%;
+}
+
+th, td {
+  padding: .15rem;
+}
+
+th {
+  background-color:rgb(205, 205, 205);
+  
+}
+
+td a:nth-child(2) {
+  margin-left: 20px;
+}
+
+td {
+  background-color: #fff;
+  color: rgb(90, 92, 105);
+}
+
+.btn-secondary {
+  color: #4e73df;
+  background-color:rgb(205, 205, 205);
+}
+
+.btn-group {
+  margin-left: auto;
+  margin-top: 125px;
+  margin-right: 40px;
+}

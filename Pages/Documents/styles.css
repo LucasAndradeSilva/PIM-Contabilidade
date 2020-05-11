@@ -1,3 +1,35 @@
+table {
+  border: 1px solid #4667c8;
+  color: #4e73df;
+  width: 80%;
+  border-collapse:unset;
+  background-color: #4e73df;/* #4e73df*/
+  border-radius: .35rem;
+  margin-top: 5%;
+}
+
+th, td {
+  padding: .15rem;
+}
+
+th {
+  background-color:rgb(205, 205, 205);
+  
+}
+
+td a:nth-child(2) {
+  margin-left: 20px;
+}
+
+td {
+  background-color: #fff;
+  color: rgb(90, 92, 105);
+}
+
+main {
+  height: 600px;
+}
+
 #logo-empresa {
   text-decoration: none;
   color: #FFFFFF;
@@ -26,33 +58,46 @@
   content: "\f59c";
 }
 
-main {
-  height: 600px;
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  /* background-color: red; */
+  height: 100%;
 }
 
+.download-box {
+  height: 75%;
+}
 
-.content {
-  height: 400px;
-  display: inline-flex;
-  text-align: justify;
-  margin: auto;
-  background-color: red;
+.border-left-light-blue {
+  border-left: .25rem solid #819ceb;
 }
 
 .content h2,p {
   color: rgb(26, 26, 26);
-  /* align-items: center;   */
 }
+
+.form-group {
+  align-self: center;
+  padding: 15px;
+}
+
 .textarea { 
-  height: 400px;
-  text-align: center;
-  background-color: #cccc;
+  align-self: center;
+  padding: 0 15px 15px;
 }
 
 .textarea textarea {
   resize: none;
+  border-radius: .35rem;
 }
 
+.button {
+  display: block;
+  margin-left: auto;
+}
 
 .form-group [type="file"] {
   display: none;
@@ -70,4 +115,20 @@ main {
   color: #fff;
   background-color: #2e59d9;
   border-color: #2653d4;
+}
+
+#descricao {
+  border-spacing: 15px 0; 
+  text-align: justify;
+  background-color: #ccd9ff;
+}
+
+.document-box {
+  height: 75%;
+  width: 80%;
+  align-items: center;
+}
+
+.title-doc {
+  margin-top: 10px;
 }
