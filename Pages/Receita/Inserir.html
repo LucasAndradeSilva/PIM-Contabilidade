@@ -12,14 +12,14 @@
   <title>SB Admin 2 - Tables</title>
 
   <!-- Custom fonts for this template -->
-  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
 
   <!-- Custom styles for this page -->
-  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">  
+  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -28,8 +28,106 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->   
-    <!-- End of Sidebar -->
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">Nome da Empresa</div>
+        </a>
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+  
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="../menu.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+        </li>
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+  
+        <div class="sidebar-heading">
+          Funções
+        </div>   
+         
+        <li class="nav-item">
+          <a class="nav-link"  href="../perfilEmpresa.html">
+            <i class="fas fa-fw fa-user"></i>
+            <span>Perfil Empresa</span>
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuDoc" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Documentos</span>
+          </a>
+          <div id="MenuDoc" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="../login.html">Consultar</a>
+              <a class="collapse-item" href="../Documents/cadastrar.html">Cadastrar</a>                 
+            </div>
+          </div>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuRecita" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-dollar-sign"></i>
+            <span>Receita</span>
+          </a>
+          <div id="MenuRecita" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="Inserir.html">Inserir</a>
+              <a class="collapse-item" href="DRE.html">DRE</a>                 
+            </div>
+          </div>
+        </li>      
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuPagamento" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-money-check-alt"></i>
+            <span>Folha de Pagamento</span>
+          </a>
+          <div id="MenuPagamento" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="#">Gerar</a>                 
+              <a class="collapse-item" href="#">Historico</a>
+            </div>
+          </div>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuImposto" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-receipt"></i>
+            <span>Imposto de Renda</span>
+          </a>
+          <div id="MenuImposto" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="#">Gerar</a>                 
+              <a class="collapse-item" href="#">Historico</a>
+            </div>
+          </div>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuCrescimento" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-chart-line"></i>
+            <span>Crescimento da Empresa</span>
+          </a>
+          <div id="MenuCrescimento" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="#">Crescimento Futuro</a>                 
+              <a class="collapse-item" href="#">Historico</a>
+            </div>  
+        </li>  
+      </ul>
+      <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -223,61 +321,48 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Empresas Cadastradas</h1>         
-
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Escolha uma empresa</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Inserir Receita</h6>
             </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Empresa</th>
-                      <th>CNJP</th>   
-                      <th>Menu</th>                                         
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                        <th>Empresa</th>
-                        <th>CNJP</th>                    
-                        <th>Menu</th>   
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <tr>
-                      <td>Microsofty</td>
-                      <td>0001/7645</td>                 
-                      <td>  
-                        <div class="my-2"></div>
-                        <a href="/Pages/menu.html" class="btn btn-secondary btn-icon-split">
-                            <span class="icon text-white-50">
-                                <i class="fas fa-arrow-right"></i>
-                            </span>
-                        <span class="text">Entrar na empresa</span>
-                        </a>
-                    </td> 
-                    </tr>
-                    <tr>
-                      <td>Garrett Winters</td>
-                      <td>0001/0898</td>               
-                      <td>  
-                        <div class="my-2"></div>
-                        <a href="/Pages/menu.html" class="btn btn-secondary btn-icon-split">
-                            <span class="icon text-white-30">
-                                <i class="fas fa-arrow-right"></i>
-                            </span>
-                        <span class="text">Entrar na empresa</span>
-                        </a>
-                        </td> 
-                    </tr>      
-                  </tbody>
-                </table>
-              </div>
+            <div class="card-body">             
+                <br/>
+                <form class="user">
+                    <div class="form-group row">  
+                        <div class="col-sm-1 mb-3 mb-sm-0">       
+                            <label>DISPESAS</label>
+                            <input type="radio" name="receita" class="form-control"/>
+                        </div>
+                        <div class="col-sm-1 mb-3 mb-sm-0">       
+                            <label>RECEITAS</label>
+                            <input type="radio" name="receita" class="form-control"/>
+                        </div>                    
+                   </div> 
+                    <div class="form-group row">
+                      <div class="col-sm-2 mb-2 mb-sm-0">                        
+                            <label class="text-center">CATEGORIA</label>
+                            <div class="dropdown no-arrow mb-4">
+                                <select  class="dropdown-menu show">
+                                    <option class="dropdown-item" selected>CONTA</option>
+                                    <option>EQUIPAMENTOS</option>
+                                </select>                            
+                            </div>                        
+                      </div>  
+                      <div class="col-sm-4 mb-3 mb-sm-0">
+                        <label class="text-center">DATA</label>
+                        <input type="date" class="form-control"/>
+                      </div> 
+                      <div class="col-sm-6 mb-3 mb-sm-0">
+                        <label class="text-center">VALOR</label>
+                        <input type="text" class="form-control"/>
+                      </div>                      
+                    </div>         
+                    <div class="form-group">                        
+                          <label>DESCRIÇÃO</label>
+                          <textarea class="form-control"></textarea>                                                                    
+                    </div>                             
+                  </form>
             </div>
           </div>
 
@@ -328,21 +413,21 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="../js/sb-admin-2.min.js"></script>
+  <script src="../../js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../js/demo/datatables-demo.js"></script>
+  <script src="../../js/demo/datatables-demo.js"></script>
 
 </body>
 

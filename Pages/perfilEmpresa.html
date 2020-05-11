@@ -9,14 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>SB Admin 2 - Tables</title>
 
-  <!-- Custom fonts for this template-->
+  <!-- Custom fonts for this template -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="../https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
+  <!-- Custom styles for this template -->
   <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -28,105 +31,103 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">Nome da Empresa</div>
-      </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <div class="sidebar-heading">
-        Funções
-      </div>   
-       
-      <li class="nav-item">
-        <a class="nav-link"  href="perfilEmpresa.html">
-          <i class="fas fa-fw fa-user"></i>
-          <span>Perfil Empresa</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuDoc" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Documentos</span>
-        </a>
-        <div id="MenuDoc" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">            
-            <a class="collapse-item" href="login.html">Consultar</a>
-            <a class="collapse-item" href="Documents/cadastrar.html">Cadastrar</a>                 
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
           </div>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuRecita" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-dollar-sign"></i>
-          <span>Receita</span>
+          <div class="sidebar-brand-text mx-3">Nome da Empresa</div>
         </a>
-        <div id="MenuRecita" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">            
-            <a class="collapse-item" href="../Pages/Receita/Inserir.html">Inserir</a>
-            <a class="collapse-item" href="../Pages/Receita/DRE.html">DRE</a>                 
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+  
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="menu.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+        </li>
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+  
+        <div class="sidebar-heading">
+          Funções
+        </div>   
+         
+        <li class="nav-item">
+          <a class="nav-link"  href="perfilEmpresa.html">
+            <i class="fas fa-fw fa-user"></i>
+            <span>Perfil Empresa</span>
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuDoc" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Documentos</span>
+          </a>
+          <div id="MenuDoc" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="login.html">Consultar</a>
+              <a class="collapse-item" href="Documents/cadastrar.html">Cadastrar</a>                 
+            </div>
           </div>
-        </div>
-      </li>      
-
-      <li class="nav-item">
-        <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuPagamento" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-money-check-alt"></i>
-          <span>Folha de Pagamento</span>
-        </a>
-        <div id="MenuPagamento" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">            
-            <a class="collapse-item" href="#">Gerar</a>                 
-            <a class="collapse-item" href="#">Historico</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuRecita" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-dollar-sign"></i>
+            <span>Receita</span>
+          </a>
+          <div id="MenuRecita" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="../Pages/Receita/Inserir.html">Inserir</a>
+              <a class="collapse-item" href="../Pages/Receita/DRE.html">DRE</a>                  
+            </div>
           </div>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuImposto" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-receipt"></i>
-          <span>Imposto de Renda</span>
-        </a>
-        <div id="MenuImposto" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">            
-            <a class="collapse-item" href="#">Gerar</a>                 
-            <a class="collapse-item" href="#">Historico</a>
+        </li>      
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuPagamento" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-money-check-alt"></i>
+            <span>Folha de Pagamento</span>
+          </a>
+          <div id="MenuPagamento" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="#">Gerar</a>                 
+              <a class="collapse-item" href="#">Historico</a>
+            </div>
           </div>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuCrescimento" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-chart-line"></i>
-          <span>Crescimento da Empresa</span>
-        </a>
-        <div id="MenuCrescimento" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">            
-            <a class="collapse-item" href="#">Crescimento Futuro</a>                 
-            <a class="collapse-item" href="#">Historico</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuImposto" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-receipt"></i>
+            <span>Imposto de Renda</span>
+          </a>
+          <div id="MenuImposto" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="#">Gerar</a>                 
+              <a class="collapse-item" href="#">Historico</a>
+            </div>
           </div>
-
-      </li>
-
-    </ul>
-    <!-- End of Sidebar -->
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link"  href="#" data-toggle="collapse" data-target="#MenuCrescimento" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-chart-line"></i>
+            <span>Crescimento da Empresa</span>
+          </a>
+          <div id="MenuCrescimento" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">            
+              <a class="collapse-item" href="#">Crescimento Futuro</a>                 
+              <a class="collapse-item" href="#">Historico</a>
+            </div>  
+        </li>  
+      </ul>
+      <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -287,8 +288,8 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Funcionário</span>
-                <img class="img-profile rounded-circle" src="/img/Eu.jpeg">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -320,138 +321,98 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Ganhas(Mensais)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Perfil Empresa</h6>
             </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Ganhos (Anuais)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+            <div class="card-body">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                      <i class="fas fa-laugh-wink"></i>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    <div class="sidebar-brand-text mx-3">Malu e Isabelly Advocacia ME</div>
+                </a>
+                <br/>
+                <form class="user">
+                    <div class="form-group row">
+                      <div class="col-sm-6 mb-3 mb-sm-0">
+                        <label>CNPJ</label>
+                        <input type="text" class="form-control" id="exampleFirstName" value="72.292.252/0001-42">
+                      </div>  
+                      <div class="col-sm-6 mb-3 mb-sm-0">
+                        <label>RAZÃO SOCIAL</label>
+                        <input type="text" class="form-control" id="exampleFirstName" value="011">
+                      </div>                      
+                    </div>         
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <label>INSCRIÇÃO ESTADUAL</label>
+                          <input type="text" class="form-control" id="exampleFirstName" value="969.280.126.824">
+                        </div>  
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <label>EMAIL</label>
+                          <input type="text" class="form-control" id="exampleFirstName" value="marketing@malueisabellyadvocaciame.com.br">
+                        </div>                      
+                      </div>         
+                    <hr/>           
+                    <div class="form-group row">
+                      <div class="col-sm-6 mb-3 mb-sm-0">
+                        <label class="text-center">CEP</label>
+                        <input type="text" class="form-control" id="exampleInputPassword" value="13563-778">
+                      </div>
+                      <div class="col-sm-6 mb-3 mb-sm-0">
+                        <label>RUA</label>
+                        <input type="text" class="form-control" id="exampleRepeatPassword" value="Rua Travessa Alcides Finochio">
+                      </div>                      
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Documentos Vencidos</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>  
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <label class="text-center">BAIRRO</label>
+                          <input type="text" class="form-control" id="exampleInputPassword" value="Parque Fehr">
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <label>NÚMERO</label>
+                          <input type="text" class="form-control" id="exampleRepeatPassword" value="870">
+                        </div>                      
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <label class="text-center">CIDADE</label>
+                          <input type="password" class="form-control" id="exampleInputPassword" placeholder="São Carlos">
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <label class="text-center">COMPLEMENTO</label>
+                             <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                        </div>                     
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="form-group row">                      
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <label class="text-center">ESTADO</label>
+                            <div class="dropdown no-arrow mb-4">
+                                <select  class="dropdown-menu show">
+                                    <option class="dropdown-item" selected>SP</option>
+                                    <option>TO</option>
+                                </select>                            
+                            </div>
+                        </div>                      
                     </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-bar">
-                    <canvas id="myBarChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                    <br/>
+                    <hr/>                    
+                    <div class="form-group row">                      
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <label class="text-center">TELEFONE</label>
+                            <input type="text" class="form-control" id="exampleInputPassword" value="(16) 2658-8305">
+                          </div>
+                          <div class="col-sm-6 mb-3 mb-sm-0">
+                              <label class="text-center">CELULAR</label>
+                               <input type="text" class="form-control" id="exampleInputPassword" value="(16) 98884-7062">
+                          </div>                  
                     </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                  </div>
-                </div>
-              </div>
+                  </form>
             </div>
           </div>
+
         </div>
         <!-- /.container-fluid -->
 
@@ -468,6 +429,35 @@
       </footer>
       <!-- End of Footer -->
 
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="../vendor/jquery/jquery.min.js"></script>
@@ -480,11 +470,11 @@
   <script src="../js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../vendor/chart.js/Chart.min.js"></script>
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-  <!-- Page level custom scripts -->  
-  <script src="../js/demo/chart-pie-demo.js"></script>
-  <script src="../js/demo/chart-bar-demo.js"></script>
+  <!-- Page level custom scripts -->
+  <script src="../js/demo/datatables-demo.js"></script>
 
 </body>
 
