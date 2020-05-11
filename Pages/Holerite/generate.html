@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin 2 - Document</title>
+  <title>SB Admin 2 - Holerite</title>
 
   <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="../https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
-  <link href="../Documents/styles.css" rel="stylesheet">
+  <link href="../Holerite/styles.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -200,26 +200,32 @@
     
   </nav>
 
-<main>
-  <div class="content">
-    <div class="card shadow py-2 download-box border-left-light-blue ">
-      <div class="form-group">
-        <form>
-          <h2>Enviar Documento</h2>
-          <p>O arquivo precisa ter no máximo 8.00MB e ter o formato em pdf.</p>
+  <main>
+    <div class="content">
+      <div class="card shadow py-2 holerite-box border-left-light-blue ">
+        <div class="upload">
+          <h2 class="title-holerite">Gerar Holerite</h2>
+          <p>O arquivo precisa ter no máximo 8.00MB e ter o formato em <span>.xlsx</span>(Excel).</p>
           <label class="custom-upload">SELECIONAR ARQUIVO
             <input type="file" class="form-control-file " id="exampleFormControlFile1">
           </label>
-        </form>
+          <p class="require">*é necessário conter carga horaria do funcionário.</p> 
+          <select class="custom-select">
+            <option selected>Selecionar Departamento.</option>
+            <option value="1">Tecnologia da Informação(T.I)</option>
+            <option value="2">Recursos Humanos.</option>
+            <option value="3">Contabilidade.</option>
+          </select>
+          <div style="margin-top: 30px;">
+            <input class="btn btn-primary button" type="submit" value="Gerar">
+            <p class="require">*esse processo poder levar um tempo.</p>
+          </div>
+        </div>
       </div>
-      <div class="textarea">
-        <textarea name="descricão" id="descricao" cols="40" rows="7" required  maxlength="100" placeholder="Descrição do documento"></textarea>
-        <input class="btn btn-primary button" type="submit" value="Enviar">
-      </div>
-    </div> 
-  </div>
-</main>
+    </div>
 
+  </main>
+ 
   <footer class="sticky-footer bg-white">
     <div class="container my-auto">
       <div class="copyright text-center my-auto">
